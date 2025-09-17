@@ -43,11 +43,11 @@ const db = mysql.createConnection({
 ```
 ..\TPD_2141762074
 ```
-- untuk bagian frontend pada lokasi
+- untuk bagian backend pada lokasi
 ```
 ..\TPD_2141762074\server
 ```
-5. __Install Dependensi__ dengan membuka dua terminal di dalam folder proyek dan jalankan perintah:
+5. __Install Dependensi__ pada kedua terminal tersebut dan jalankan perintah:
 ```ruby
 npm install
 ```
