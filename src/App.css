@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-wrapper {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.route-transition {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  animation: routeFadeSlide 260ms ease forwards;
+
 }
 
-@keyframes App-logo-spin {
+
+.main-content-area {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+
+  
+  scrollbar-width: none;
+
+  
+  -ms-overflow-style: none;
+}
+
+
+.main-content-area::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes routeFadeSlide {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(8px);
+    filter: saturate(0.96);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0px);
+    filter: saturate(1);
   }
 }

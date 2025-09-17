@@ -1,0 +1,164 @@
+.content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #ffffff;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-image: radial-gradient(circle at 5% 15%, rgba(25,135,84,0.05), transparent 55%), radial-gradient(circle at 95% 10%, rgba(25,135,84,0.035), transparent 45%);
+}
+.content-header h1 { margin-top: 0; color: #0f5132; }
+.content-header p { color: #5f6b6f; }
+.content-header { border-bottom: 1px dashed #e6f3ec; padding-bottom: 10px; }
+.table-container { 
+  width: 100%;
+  border: 1px solid #e6f3ec;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 24px rgba(16, 112, 74, 0.06);
+}
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #e6f3ec; }
+thead th { background-color: #f3fbf7; font-weight: bold; }
+tbody tr:last-child td { border-bottom: none; }
+.action-buttons { display: flex; gap: 8px; }
+.action-buttons button { border: none; padding: 6px 12px; color: white; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 14px; transition: transform 0.1s ease, box-shadow 0.2s ease; }
+tbody tr:nth-child(even) { background-color: #fafdfb; }
+tbody tr:hover { background-color: #eaf7f0; }
+
+
+.search-section {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cfe8d9;
+  border-radius: 8px;
+  padding: 5px 10px;
+  flex-grow: 1;
+  max-width: 400px;
+  background-color: #ffffff;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.search-bar:focus-within { border-color: #198754; box-shadow: 0 0 0 4px rgba(25,135,84,0.12); }
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.search-button {
+  background-color: #198754;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.1s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.search-button:hover { box-shadow: 0 6px 16px rgba(25,135,84,0.25); }
+.search-button:active { transform: translateY(1px); }
+
+.btn-tambah {
+  background-color: #198754;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+.btn-edit { background-color: #198754; color: #1f2d1f; }
+.btn-hapus { background-color: #dc3545; }
+.btn-unduh { background-color: #ffe08a; color: #1f2d1f; }
+.btn-tambah:hover, .action-buttons button:hover { box-shadow: 0 6px 16px rgba(0,0,0,0.12); }
+.btn-tambah:active, .action-buttons button:active { transform: translateY(1px); }
+
+.btn-tambah-bawah {
+  background-color: #198754;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #198754;
+}
+
+.modal-content h2 { margin-top: 0; margin-bottom: 20px; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cfe8d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: #198754; box-shadow: 0 0 0 4px rgba(25,135,84,0.12); }
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.btn-batal { background-color: #5f6b6f; color: white; }
+.btn-simpan { background-color: #198754; color: white; }
