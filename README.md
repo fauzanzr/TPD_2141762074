@@ -25,10 +25,11 @@ git clone https://github.com/fauzanzr/TPD_2141762074.git
 ```
 2. __Buat Database Phpmyadmin__ dan jalankan perintah SQL berikut untuk membuat database baru.
 ```ruby
-CREATE TABLE "database_arsipsura";
+CREATE TABLE "database_arsipsurat";
 ```
-3. __Import Database Phpmyadmin__ yang ada pada repositori ini ke dalam database yang telah dibuat.
-4. __Konfigurasi Koneksi Database__ dengan membuka file server.js kemudian sesuaikan dengan username dan password Phpmyadmin Anda.
+3. __Import file SQL__ yang terdapat di folder Database ke dalam database yang sudah dibuat pada phpMyAdmin.
+        <img width="1000" height="559" alt="image" src="https://github.com/user-attachments/assets/09a802e4-906a-4708-afd3-811511490767" />
+5. __Konfigurasi Koneksi Database__ dengan membuka file server.js kemudian sesuaikan dengan username dan password Phpmyadmin Anda.
 ```ruby
 const db = mysql.createConnection({
     host: "localhost",
