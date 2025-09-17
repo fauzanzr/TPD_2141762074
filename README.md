@@ -3,8 +3,7 @@ Aplikasi ini merupakan website yang dibangun untuk memenuhi tugas praktik demons
 Dengan menggunakan __React__ sebagai tampilan antarmuka, __Express__ sebagai server aplikasi, dan database MySQL yang dikelola melalui __phpMyAdmin__.
 
 # Tujuan Aplikasi Dikembangkan
-Untuk membuat sebuah aplikasi yang mampu memenuhi kebutuhan dari Desa Karangduren dalam pengarsipan surat-surat resmi. Aplikasi ini diharapkan dapat digunakan
-untuk mengelola seluruh surat-surat yang telah diarsipkan dalam format PDF.
+Tujuan dari aplikasi ini adalah untuk membantu Desa Karangduren dalam mengelola arsip surat-surat resmi dengan menyediakan sistem yang mampu menyimpan dokumen dalam format PDF, memudahkan proses unggah dan pencarian surat berdasarkan judul, serta memungkinkan perangkat desa untuk menampilkan maupun mengunduh kembali surat yang telah disimpan.
 
 # Fitur
 -  Arsip Surat
@@ -23,7 +22,7 @@ untuk mengelola seluruh surat-surat yang telah diarsipkan dalam format PDF.
 ```
 git clone https://github.com/fauzanzr/TPD_2141762074.git
 ```
-2. __Buat Database Phpmyadmin__ dan jalankan perintah SQL berikut untuk membuat database baru.
+2. __Buat Database Phpmyadmin__, dengan menjalankan perintah SQL berikut untuk membuat database baru.
 ```ruby
 CREATE DATABASE database_arsipsurat;
 ```
@@ -39,11 +38,11 @@ const db = mysql.createConnection({
 })
 ```
 4. __Buka dua terminal terpisah__ untuk menjalankan bagian frontend dan backend.<br/>
-- untuk bagian frontend pada lokasi
+- untuk bagian frontend pada lokasi:
 ```
 ..\TPD_2141762074
 ```
-- untuk bagian backend pada lokasi
+- untuk bagian backend pada lokasi:
 ```
 ..\TPD_2141762074\server
 ```
