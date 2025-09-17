@@ -16,7 +16,7 @@ untuk mengelola seluruh surat-surat yang telah diarsipkan dalam format PDF.
       
 -  Kategori Surat
     - Fitur Tambah, Lihat, Ubah, dan Hapus (CRUD) untuk kategori.
-    - Pencegahan Duplikasi pada kategori.< br / >
+    - Pencegahan Duplikasi pada kategori.
 
 # Langkah Instalasi
 1. __Salin Proyek__ ini ke komputer lokal Anda.
