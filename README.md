@@ -29,7 +29,7 @@ CREATE TABLE "database_arsipsurat";
 ```
 3. __Import file SQL__ yang terdapat di folder Database ke dalam database yang sudah dibuat pada phpMyAdmin.
         <img width="1000" height="559" alt="image" src="https://github.com/user-attachments/assets/09a802e4-906a-4708-afd3-811511490767" />
-5. __Konfigurasi Koneksi Database__ dengan membuka file server.js kemudian sesuaikan dengan username dan password Phpmyadmin Anda.
+5. __Konfigurasi Koneksi Database__ dengan membuka file .\TPD_2141762074\server\server.js kemudian sesuaikan dengan username dan password Phpmyadmin Anda.
 ```ruby
 const db = mysql.createConnection({
     host: "localhost",
@@ -41,11 +41,11 @@ const db = mysql.createConnection({
 4. __Buka dua terminal terpisah__ untuk menjalankan bagian frontend dan backend.<br/>
 - untuk bagian frontend pada lokasi
 ```
-..\website_arsip_surat
+..\TPD_2141762074
 ```
 - untuk bagian frontend pada lokasi
 ```
-..\website_arsip_surat\server
+..\TPD_2141762074\server
 ```
 5. __Install Dependensi__ dengan membuka dua terminal di dalam folder proyek dan jalankan perintah:
 ```ruby
